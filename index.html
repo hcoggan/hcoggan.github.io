@@ -80,6 +80,27 @@
     .pub-meta a { color: #1a4f8a; text-decoration: none; }
     .pub-meta a:hover { text-decoration: underline; }
 
+    .conf-list {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .conf-item {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .conf-item:last-child { border-bottom: none; }
+    .conf-name { flex: 1; }
+    .conf-type {
+      font-size: 0.76rem;
+      color: #999;
+      white-space: nowrap;
+    }
+
     footer {
       font-family: 'Source Sans 3', sans-serif;
       font-size: 0.8rem;
@@ -92,13 +113,13 @@
 
 <header>
   <h1>Helena Coggan</h1>
-  <p class="position">Postdoctoral Researcher, Boston Children's Hospital</p>
-  <p class="position">helena.coggan@childrens.harvard.edu /p>
+  <p class="position">Research Scientist, Computational Health Informatics Program (Cava Lab)</p>
+  <p class="position">Boston Children's Hospital · Harvard Medical School</p>
+  <p class="position">helena.coggan@childrens.harvard.edu</p>
   <nav>
-    <a href="HC-CV-Mar26.pdf">CV</a>
-    <a href="https://scholar.google.com/citations?user=w2Knk_cAAAAJ&hl=en">Google Scholar</a>
-    <a href="https://github.com/hcoggan">GitHub</a>
-    <a href="https://cavalab.org/members/Coggan-Helena/">Lab Website</a>
+    <a href="coggan_cv.pdf">CV</a>
+    <a href="https://scholar.google.com">Google Scholar</a>
+    <a href="https://github.com">GitHub</a>
   </nav>
 </header>
 
@@ -106,15 +127,19 @@
 
 <section>
   <p>
-    I am a postdoc in the Computational Health Informatics Program at Boston Children's Hospital,
-    working with William La Cava. My research concerns the development of algorithms for real-time 
-    clinical monitoring in the emergency department. I also study how healthcare disparities
-    arise in clinical decision-making process, both in the emergency department and on the labor ward.
+    I am a research scientist in the Cava Lab at Boston Children's Hospital. My work
+    focuses on algorithmic fairness in clinical machine learning — I conduct
+    epidemiological analyses of large-scale electronic health record databases to study
+    how demographic factors shape clinician decision-making in the emergency department,
+    and develop real-time fairness monitoring tools for ML systems deployed in clinical settings.
   </p>
   <p>
-    Before moving to Boston, I completed my PhD at University College London (2025). My doctoral
-    thesis focused on large-scale agent-based simulations of lung tumour evolution, and was supervised
-    by Jasmin Fisher, with support from Nicholas McGranahan and Karen M. Page.
+    I completed my PhD in computational biology at University College London (2025),
+    supervised by Prof. Jasmin Fisher and in collaboration with the McGranahan and
+    Swanton laboratories. My dissertation modelled the role of cell plasticity in
+    early-stage lung cancer using agent-based simulations and Bayesian inference on data
+    from the TRACERx patient cohort. Before that I read Natural Sciences (Physics) at
+    the University of Cambridge, graduating with a high first.
   </p>
 </section>
 
@@ -122,38 +147,131 @@
 
 <section id="research">
   <h2>Research Interests</h2>
-  <p> Clinical decision support tools · AI/ML for Health · Emergency medicine · Maternal health · Health policy · Epidemiology · Health disparities </p>
+  <p>Algorithmic fairness · Clinical machine learning · Cancer evolution · Agent-based modelling · Bayesian inference · Epidemiology of health disparities</p>
 </section>
 
 <hr>
 
 <section id="publications">
-  <h2>Selected Publications</h2>
+  <h2>Publications</h2>
 
   <div class="pub">
-    <div class="pub-title">Evidential competition and speaker commitment in Tibetan</div>
+    <div class="pub-title">Clone copy number diversity is linked to survival in lung cancer</div>
     <div class="pub-meta">
-      Jane Smith &amp; Maria Lee. <em>Language</em> 100(2), 2024.
-      <a href="#">PDF</a>
+      K. Grigoriadis*, P. Pawlik*, A. Bunkum, H. Coggan, … and N. McGranahan.
+      <em>Nature</em>, 2025. (*joint first authors)
     </div>
   </div>
 
   <div class="pub">
-    <div class="pub-title">The grammar of hearsay: a cross-linguistic survey</div>
+    <div class="pub-title">Deciphering the influence of demographic factors on the treatment of pediatric patients in the emergency department</div>
     <div class="pub-meta">
-      Jane Smith. <em>Journal of Linguistics</em> 59(1), 2023.
-      <a href="#">PDF</a>
+      H. Coggan, A. Bischops, … and William G. La Cava.
+      <em>Biocomputing 2026</em>, 2025.
     </div>
   </div>
 
   <div class="pub">
-    <div class="pub-title">Indirect evidentials as modal operators: evidence from Lhasa Tibetan</div>
+    <div class="pub-title">An agent-based modelling framework to study growth mechanisms in EGFR-L858R mutant cell alveolar type II cells</div>
     <div class="pub-meta">
-      Jane Smith. <em>Proceedings of SALT 32</em>, 2022.
-      <a href="#">PDF</a>
+      H. Coggan, C. E. Weeden, P. Pearce, M. P. Dalwadi, A. Magness, C. Swanton, and K. M. Page.
+      <em>Royal Society Open Science</em>, 2024.
     </div>
   </div>
 
+  <div class="pub">
+    <div class="pub-title">A novel interpretable machine learning algorithm to identify optimal parameter space for cancer growth</div>
+    <div class="pub-meta">
+      H. Coggan, H. A. Terre, and P. Liò.
+      <em>Frontiers in Big Data</em>, 2022.
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">The role of evolutionary game theory in spatial and nonspatial models of the survival of cooperation in cancer: a review</div>
+    <div class="pub-meta">
+      H. Coggan and K. M. Page.
+      <em>Journal of the Royal Society, Interface</em>, 2022.
+    </div>
+  </div>
+
+</section>
+
+<hr>
+
+<section id="preprints">
+  <h2>Preprints &amp; Manuscripts in Preparation</h2>
+
+  <div class="pub">
+    <div class="pub-title">The clinical impact of phenotypic plasticity in non-small cell lung cancer</div>
+    <div class="pub-meta">
+      H. Coggan*, J.R.M. Black*, T. Jones*, … J. Fisher and N. McGranahan.
+      <em>In preparation.</em> (*joint first authors)
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">Agent-based simulations of lung tumour evolution suggest ongoing cell competition drives clonal expansion</div>
+    <div class="pub-meta">
+      H. Coggan, J.R.M. Black, C. Martinez-Ruiz, … J. Fisher and N. McGranahan.
+      <em>bioRxiv</em>, 2025. · <a href="https://doi.org/10.1101/2025.11.04.686578">Preprint</a>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">Demographic factors associated with triage acuity, admission and length of stay during adult emergency department visits</div>
+    <div class="pub-meta">
+      H. Coggan, P. Chaudari, … and William G. La Cava.
+      <em>arXiv</em>, 2025. · <a href="https://arxiv.org/abs/2503.22781">Preprint</a>
+    </div>
+  </div>
+
+</section>
+
+<hr>
+
+<section id="conference">
+  <h2>Conferences &amp; Workshops</h2>
+  <div class="conf-list">
+
+    <div class="conf-item">
+      <span class="conf-name">Pacific Symposium on Biocomputing, Jan 2026</span>
+      <span class="conf-type">contributed talk</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">Bioinference, Warwick, UK, Jun 2024</span>
+      <span class="conf-type">contributed talk</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">Society for Mathematical Biology Annual Meeting, Jul 2023</span>
+      <span class="conf-type">invited talk</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">Francis Crick Institute PhD Student Symposium, Jul 2023</span>
+      <span class="conf-type">best first-year speaker</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">British Applied Mathematics Conference, Apr 2023</span>
+      <span class="conf-type">contributed talk</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">American Association for Cancer Research Annual Meeting, Apr 2023</span>
+      <span class="conf-type">poster</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">Integrated Mathematical Oncology Workshop, Oct 2022</span>
+      <span class="conf-type">poster</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">European Conference on Mathematical and Theoretical Biology, Sep 2022</span>
+      <span class="conf-type">poster</span>
+    </div>
+    <div class="conf-item">
+      <span class="conf-name">UK Graduate Modelling Camp, Jun 2022</span>
+      <span class="conf-type">best student in group</span>
+    </div>
+
+  </div>
 </section>
 
 <hr>
@@ -161,12 +279,13 @@
 <section id="contact">
   <h2>Contact</h2>
   <p>
-    I welcome inquiries from students and colleagues. The best way to reach me
-    is by email. Office hours are Wednesdays 10 am–12 pm.
+    I welcome enquiries from collaborators and prospective students.
+    The best way to reach me is by email at
+    <a href="mailto:helena.coggan@childrens.harvard.edu">helena.coggan@childrens.harvard.edu</a>.
   </p>
 </section>
 
-<footer>Last updated March 2025</footer>
+<footer>Last updated March 2026</footer>
 
 </body>
 </html>
